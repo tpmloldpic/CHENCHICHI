@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>臺北自來水源地</title>
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif;
+  font-weight:300;      /* 內文維持細 */
+  background:#000;
+}
+
+/* 背景 */
+.hero{
+  position: relative;
+  min-height: 100vh;
+  padding: 24px 16px 44px;
+
+  background:
+    radial-gradient(1200px 800px at 20% 10%, rgba(255,255,255,.12), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(0,0,0,.22), rgba(0,0,0,.48)),
+    url("images/bg.jpg");
+
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.hero-content{
+  position:relative;
+  max-width:900px;
+  margin:0 auto;
+  color:#fff;
+}
+
+/* 標題：白色 + 粗一點 */
+.hero-title{
+  text-align:center;
+  font-size:34px;
+  font-weight:600;
+  margin:8px 0 18px;
+  letter-spacing:.5px;
+  color:#fff;
+}
+
+/* ✅ YouTube 影片區：外觀跟你原本 video 一樣（圓角/陰影/滿寬） */
+.yt-box{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  background:#000;
+  box-shadow:0 14px 40px rgba(0,0,0,.35);
+
+  /* 16:9 比例 */
+  position:relative;
+  padding-top:56.25%;
+}
+
+.yt-box iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* 文字區：半透明玻璃感 */
+.hero-text{
+  margin-top:18px;
+  font-size:20px;
+  line-height:1.9;
+  padding:18px;
+  border-radius:16px;
+
+  background:rgba(0,0,0,.55);           /* 半透明 */
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 12px 40px rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* 段落：統一不要粗 + 首行縮排 */
+.hero-text p{
+  text-indent:2em;
+  margin:12px 0;
+  font-weight:300;
+}
+
+@media(min-width:768px){
+  .hero-title{font-size:44px;}
+  .hero-text{font-size:22px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div class="hero-content">
+
+    <h2 class="hero-title">臺北自來水源地</h2>
+
+    <!-- ✅ 把影片改成 YouTube 嵌入：只要換 VIDEO_ID_HERE -->
+    <div class="yt-box">
+  <iframe
+    src="https://www.youtube.com/embed/2uYwrolHAsE"
+    title="臺北自來水源地"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+    <div class="hero-text">
+      <p>正氣橋是臺北市唯一的一座圓環型高架橋，於1974年興建完成，東聯接麥帥公路、西銜南京東路、南邊則通往基隆路，共有三處引道。</p>
+<p>後因車流增加，為配合環東大道與堤頂大道工程設計，於1999年拆除重建，取消圓環設計。耗時2年，2001年改為立體交叉，我們可以由航空影像比較1994年和2025年的差異，看出老照片所述之正氣圓環拆除的紀實。</p>
+</div>
+
+
+ 
+
+</body>
+</html>
